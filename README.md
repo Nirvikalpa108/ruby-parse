@@ -11,9 +11,9 @@ Ensure you have installed [Ruby](https://www.ruby-lang.org/en/downloads/), [Ruby
 
 2. Install gems: ```bundle install```
 
-3. Run tests: ```bundle exec ruby test/run_test.rb```
+3. Run tests: ```ruby parse_test.rb```
 
-4. Start a console session: ```bundle exec irb -Ilib```
+4. Start a console session: ```irb```
 
 5. Load the template library: ```require 'parse'```
 
