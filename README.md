@@ -7,15 +7,17 @@ This script parses and sorts a log file.
 Ensure you have installed [Ruby](https://www.ruby-lang.org/en/downloads/), [Rubygems](https://rubygems.org/pages/download) (a package manager framework for Ruby) and [Bundler](https://bundler.io/) (a Ruby gem management gem).
 
 ## Installation 
-1. Open your terminal or command prompt.
+1. Fork this repo ([see here](https://help.github.com/en/articles/fork-a-repo) for instructions)
 
-2. Install gems: ```bundle install```
+1. In your terminal or command prompt navigate to the directory where you have saved the repo
 
-3. Run tests: ```ruby parse_test.rb```
+1. Install gems: ```bundle install```
 
-4. Start a console session: ```irb```
+1. Run tests: ```ruby parse_test.rb```
 
-5. Load the template library: ```require 'parse'```
+1. Start a console session: ```irb```
+
+1. Load the template library: ```require 'parse'```
 
 ## Help
 
