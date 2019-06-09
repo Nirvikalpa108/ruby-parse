@@ -13,11 +13,9 @@ Ensure you have installed [Ruby](https://www.ruby-lang.org/en/downloads/), [Ruby
 
 1. Install gems: ```bundle install```
 
-1. Run tests: ```ruby parse_test.rb```
+1. Run the programme: ```ruby parse.rb```
 
-1. Start a console session: ```irb```
-
-1. Load the template library: ```require 'parse'```
+1. Run the tests: ```ruby parse_test.rb```
 
 ## Help
 
