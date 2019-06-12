@@ -2,20 +2,14 @@ require 'minitest/autorun'
 require_relative 'parse.rb'
 
 class ParseTest < Minitest::Test
-  def test_print_log
-    # prints log
-  end
 
-  def test_split_log
-    # log split correctly from "xxx\1 xxxx" to "xxx\1"
-  end
-
-  def test_sort
-    # loops through split log
-    # calculates number of occurrences
-    # prints to screen each occurence with number of views ordered from greatest to least views
-    # should look like:
-    # /about/2 8 unique views
-    # /index 5 unique views
+  def test_result_correct
+    expected_elements = ["/about/2 90 unique views",
+                         "/contact 89 unique views",
+                         "/index 82 unique views",
+                         "/about 81 unique views",
+                         "/help_page/1 80 unique views",
+                         "/home 78 unique views"]
+    assert_equal(expected_elements, Parse.new.parse('webserver.log'))
   end
 end
