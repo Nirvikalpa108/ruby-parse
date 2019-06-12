@@ -1,4 +1,10 @@
 class Parse
+  attr_accessor :file_name
+
+  def initialize
+    @file_name = file_name
+  end
+
   def parse(file_name)
     file_contents = File.new(file_name).read
     file_parsed = spaced_strings(file_contents)
@@ -19,8 +25,8 @@ class Parse
   end
 
   def print_results(hsh)
-    hsh.each { |k, v| puts "#{k} #{v} unique views" }
+    hsh.map { |k, v| "#{k} #{v} unique views" }
   end
 end
 
-Parse.new.parse('webserver.log')
+# puts Parse.new.parse('webserver.log')
